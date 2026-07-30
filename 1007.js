@@ -35,6 +35,7 @@ totop.addEventListener('click', function() {
 // 卡片背景切换功能
 let croonerczy = document.getElementsByClassName('crooner-czy');
 let croonerzrt = document.getElementsByClassName('crooner-zrt');
+let croonerwhl = document.getElementsByClassName('crooner-whl');
 
 for(let i=0; i< croonerczy.length; i++) {
     croonerczy[i].addEventListener('click', function() {
@@ -45,5 +46,11 @@ for(let i=0; i< croonerczy.length; i++) {
 for(let i=0; i< croonerzrt.length; i++) {
     croonerzrt[i].addEventListener('click', function() {
         this.classList.toggle('zrtt');
+    })
+}
+
+for(let i=0; i< croonerwhl.length; i++) {
+    croonerwhl[i].addEventListener('click', function() {
+        this.classList.toggle('whll');
     })
 }
