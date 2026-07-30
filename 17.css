@@ -191,6 +191,14 @@ section p{
     color: rgb(11, 15, 70);
     border-radius: 5px;
 }
+.crooner-lky.lkyy{
+    background-image:url(./imm/lky.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
 
 .crooner-xyj{
     width: 48%;
