@@ -1,20 +1,19 @@
 
-var yky = document.getElementById('yky');
-var yy =yky.querySelectorAll('a');
-yy.forEach(function(yy) {
-    yy.addEventListener('click', function(event) {
+// 导航栏平滑滚动
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
         event.preventDefault();
-        const targetId = yy.getAttribute('href');
+        const targetId = link.getAttribute('href');
         const targetSection = document.querySelector(targetId);
 
         if (targetSection) {
             targetSection.scrollIntoView({
                 behavior: 'smooth'
-            
             });
         }
-    })
-})
+    });
+});
 
 var totop = document.getElementById('to-top');
 
@@ -32,3 +31,19 @@ totop.addEventListener('click', function() {
         behavior: 'smooth'
     });
 })
+
+// 卡片背景切换功能
+let croonerczy = document.getElementsByClassName('crooner-czy');
+let croonerzrt = document.getElementsByClassName('crooner-zrt');
+
+for(let i=0; i< croonerczy.length; i++) {
+    croonerczy[i].addEventListener('click', function() {
+        this.classList.toggle('czyy');
+    })
+}
+
+for(let i=0; i< croonerzrt.length; i++) {
+    croonerzrt[i].addEventListener('click', function() {
+        this.classList.toggle('zrtt');
+    })
+}
