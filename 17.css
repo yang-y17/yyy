@@ -6,6 +6,7 @@ margin: 0;
     font-family: 'Arial', sans-serif;
 }
 
+
 body{
     background-color: white;
     background-repeat: no-repeat;
@@ -139,6 +140,15 @@ section p{
     color: rgb(11, 15, 70);
     
 }
+.crooner-czy.czyy{
+    background-image:url(/imm/czy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
 
 .crooner-whl{
     width: 48%;
@@ -154,8 +164,16 @@ section p{
     background-color: #f2c6da;
     padding: 20px;
     border-radius: 5px;
-    color: rgb(11, 15, 70)；
+    color: rgb(11, 15, 70);
     
+}
+.crooner-zrt.zrtt{
+    background-image:url(/imm/zrt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
 }
 
 .crooner-lky{
@@ -201,6 +219,7 @@ section p{
     padding: 20px 0;
 }
 
+
 /*底部*/
 .kk-container{
     background-color: #15293d;
@@ -216,7 +235,8 @@ section p{
     position: fixed;
     bottom: 20px;
     right:20px;
-    background-color: #729af7;
+    background-color: #93b1fe;
+    
     padding: 10px;
     font-size: 15px;
     color: white;
@@ -227,7 +247,7 @@ section p{
 }
 
 #to-top:hover{
-    background-color: #a2baf2;
+    background-color: #83a5f3;
     opacity: 0.5;
     
 }
@@ -237,7 +257,8 @@ section p{
     .crooner-container{
         flex-direction: column;
     }
-    .crooner-czy, .crooner-whl, .crooner-zrt, .crooner-lky{
+    .crooner-czy, .crooner-whl, .crooner-zrt, .crooner-lky,.crooner-xyj, .crooner-lzl{
         width: 100%;
     }
+    
 }
