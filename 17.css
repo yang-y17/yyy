@@ -1,0 +1,280 @@
+/*全局*/
+*{
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+
+hr{
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    margin:0 auto 40px auto;
+}   
+
+/*  导航栏*/
+header{
+    background-color: #15293d; 
+    padding: 10px 0;
+    
+}
+
+header h1{
+    text-align: center;
+    color:white;
+    font-size: 35px;
+    margin: 15px auto 10px auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 区块通用样式 */
+#section{
+    padding: 10px;
+}
+
+section h2{
+    text-align: center;
+    padding: 30px 0; /* 设置上下内边距为30像素，左右为0 */
+    font-size: 25px;
+    color: rgb(11, 15, 70);
+    
+} 
+
+section p{
+    text-align: center;
+    font-size: 17px;
+    color: rgb(8, 8, 8);
+    padding: 0 50px;
+}
+
+
+#about{
+    padding-top: 50px;
+}
+
+
+/*技能/爱好*/
+
+#abilitys{
+    background-color: #f5f5f6;
+}
+.abilitys-container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.ability-frontend{
+    padding: 15px 0;
+}
+
+.ability-frontend h3{
+    color: rgb(11, 15, 70);
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.abilitys-container p{
+    color: rgb(11, 15, 70);
+    opacity: 0.8;
+}
+
+
+.progress-bar{
+    height: 20px;
+    background-color: rgb(222, 220, 220);
+    border-radius: 5px;
+}
+
+.progress-level{
+    height: 100%;
+    background-color: #4677e8;
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+
+.crooner-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.crooner-czy{
+    width: 48%;
+    background-color: #f4f772;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(11, 15, 70);
+    
+}
+.crooner-czy.czyy{
+    background-image:url(./imm/czy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+
+.crooner-whl{
+    width: 48%;
+    background-color: #b7ecf2;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(11, 15, 70);
+    
+}
+.crooner-whl.whll{
+    background-image:url(./imm/whl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.crooner-zrt{
+    width: 48%;
+    background-color: #f2c6da;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(11, 15, 70);
+    
+}
+.crooner-zrt.zrtt{
+    background-image:url(./imm/zrt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.crooner-lky{
+    width: 48%;
+    background-color: #97b7ff;
+    padding: 20px;
+    color: rgb(11, 15, 70);
+    border-radius: 5px;
+}
+.crooner-lky.lkyy{
+    background-image:url(./imm/lky.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.crooner-xyj{
+    width: 48%;
+    background-color: #f8c583;
+    padding: 20px;
+    color: rgb(11, 15, 70);
+    border-radius: 5px;
+}
+
+.crooner-lzl{
+    width: 48%;
+    background-color: #65ec75;
+    padding: 20px;
+    color: rgb(11, 15, 70);
+    border-radius: 5px;
+}
+
+.crooner-container h3{
+    padding: 10px 0;
+    font-size: 23px;
+}
+
+#contact{
+    background-color: #f5f5f6;
+}
+.contact-container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.contact-info{
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+/*底部*/
+.kk-container{
+    background-color: #15293d;
+    color: pink;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+
+#to-top{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    background-color: #93b1fe;
+    
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    opacity: 0.8;
+    border: none;
+    z-index: 999;
+}
+
+#to-top:hover{
+    background-color: #83a5f3;
+    opacity: 0.5;
+    
+}
+
+/*响应式布局*/
+@media screen and (max-width: 768px) {
+    .crooner-container{
+        flex-direction: column;
+    }
+    .crooner-czy, .crooner-whl, .crooner-zrt, .crooner-lky,.crooner-xyj, .crooner-lzl{
+        width: 100%;
+    }
+    
+}
