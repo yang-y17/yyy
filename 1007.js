@@ -37,6 +37,7 @@ let croonerczy = document.getElementsByClassName('crooner-czy');
 let croonerzrt = document.getElementsByClassName('crooner-zrt');
 let croonerwhl = document.getElementsByClassName('crooner-whl');
 let croonerlky = document.getElementsByClassName('crooner-lky');
+let likedyy = document.getElementsByClassName('like-dyy');
 
 for(let i=0; i< croonerczy.length; i++) {
     croonerczy[i].addEventListener('click', function() {
@@ -59,5 +60,11 @@ for(let i=0; i< croonerwhl.length; i++) {
 for(let i=0; i< croonerlky.length; i++) {
     croonerlky[i].addEventListener('click', function() {
         this.classList.toggle('lkyy');
+    })
+}
+
+for(let i=0; i< likedyy.length; i++) {
+    likedyy[i].addEventListener('click', function() {
+        this.classList.toggle('dyyy');
     })
 }

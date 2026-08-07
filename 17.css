@@ -61,7 +61,7 @@ nav ul li a {
 
 section h2{
     text-align: center;
-    padding: 30px 0; /* 设置上下内边距为30像素，左右为0 */
+    padding: 60px 0 20px 0; /* 设置上下内边距为30像素，左右为0 */
     font-size: 25px;
     color: rgb(11, 15, 70);
     
@@ -235,6 +235,41 @@ section p{
     padding: 20px 0;
 }
 
+/* 喜欢 */
+.like-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.like-dyy{
+    width: 1000px;
+    height: 200px;
+    background-color: #83cff8;
+    padding: 20px;
+    color: rgb(11, 15, 70);
+    border-radius: 5px;
+    
+}
+.like-dyy.dyyy{
+    background-image:url(/imm/3170.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.like-dyy h3{
+    padding: 10px 0;
+    font-size: 23px;
+}
+
+.like-dyy p{
+    font-size: 17px;
+    padding: 10px 0;
+}
 
 /*底部*/
 .kk-container{
@@ -270,6 +305,7 @@ section p{
 
 /*响应式布局*/
 @media screen and (max-width: 768px) {
+    
     .crooner-container{
         flex-direction: column;
     }
@@ -279,10 +315,21 @@ section p{
         margin: 0 auto;
 
     }
+
+    .like-dyy{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+
     .ability-frontend{
         flex-direction: column;
         
     }
+
+
     .progress-bar{
         width: 90%;
         margin: 0 auto;
