@@ -249,9 +249,9 @@ section p{
 
 #to-top{
     position: fixed;
-    bottom: 20px;
+    bottom: 100px;
     right:20px;
-    background-color: #93b1fe;
+    background-color: #7da0f8;
     
     padding: 10px;
     font-size: 15px;
@@ -274,7 +274,29 @@ section p{
         flex-direction: column;
     }
     .crooner-czy, .crooner-whl, .crooner-zrt, .crooner-lky,.crooner-xyj, .crooner-lzl{
-        width: 100%;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+
+    }
+    .ability-frontend{
+        flex-direction: column;
+        
+    }
+    .progress-bar{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .ability-frontend h3{
+        text-align: center;
+    }
+
+    #to-top{
+        bottom: 100px;
+        right: 10px;
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
     }
     
 }
