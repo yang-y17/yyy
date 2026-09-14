@@ -1,0 +1,528 @@
+/*全局*/
+*{
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+
+hr{
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    margin:0 auto 40px auto;
+}   
+
+/*  导航栏*/
+header{
+    background-color: #15293d; 
+    padding: 10px 0;
+    
+}
+
+header h1{
+    text-align: center;
+    color:white;
+    font-size: 35px;
+    margin: 15px auto 10px auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 区块通用样式 */
+#section{
+    padding: 10px;
+}
+
+section h2{
+    text-align: center;
+    padding: 60px 0 20px 0; /* 设置上下内边距为30像素，左右为0 */
+    font-size: 25px;
+    color: rgb(11, 15, 70);
+    
+} 
+
+section p{
+    text-align: center;
+    font-size: 17px;
+    color: rgb(8, 8, 8);
+    padding: 0 50px;
+}
+
+
+#about{
+    padding-top: 50px;
+}
+
+
+/*技能/爱好*/
+
+#abilitys{
+    background-color: #f5f5f6;
+}
+.abilitys-container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.ability-frontend{
+    padding: 15px 0;
+}
+
+.ability-frontend h3{
+    color: rgb(11, 15, 70);
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.abilitys-container p{
+    color: rgb(11, 15, 70);
+    opacity: 0.8;
+}
+
+
+.progress-bar{
+    height: 20px;
+    background-color: rgb(222, 220, 220);
+    border-radius: 5px;
+}
+
+.progress-level{
+    height: 100%;
+    background-color: #4677e8;
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+/* ^-^ */
+.crooner-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 180px;
+}
+
+.crooner-czy{
+    width: 48%;
+    background-color: #f4f772;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(11, 15, 70);
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    
+}
+.crooner-czy.czyy{
+    background-image:url(./assets/imm/czy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+
+.crooner-whl{
+    width: 48%;
+    background-color: #b7ecf2;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(11, 15, 70);
+    position: relative;
+    z-index: 2;
+    
+}
+.crooner-whl.whll{
+    background-image:url(./assets/imm/whl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.crooner-zrt{
+    width: 48%;
+    background-color: #f2c6da;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(11, 15, 70);
+    position: relative;
+    z-index: 2;
+    
+}
+.crooner-zrt.zrtt{
+    background-image:url(./assets/imm/zrt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    
+
+    
+
+}
+
+.crooner-lky{
+    width: 48%;
+    background-color: #97b7ff;
+    padding: 20px;
+    color: rgb(11, 15, 70);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+.crooner-lky.lkyy{
+    background-image:url(./assets/imm/lky.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+
+.crooner-xyj{
+    width: 48%;
+    background-color: #f8c583;
+    padding: 20px;
+    color: rgb(11, 15, 70);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.crooner-lzl{
+    width: 48%;
+    background-color: #65ec75;
+    padding: 20px;
+    color: rgb(11, 15, 70);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.crooner-container h3{
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.crooner-container p{
+    font-size: 17px;
+    padding: 10px 0;
+    color: rgb(0, 0, 17);
+    opacity: 0.8;
+}
+
+.crooner-right,.crooner-left{
+    position: absolute;
+    width: 150px;
+    height:200px;
+    z-index: 3;
+
+}
+
+.crooner-left{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.crooner-right{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sides-image {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 5px;   
+    padding: 10% 0;
+    
+}
+
+.cw-image{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 5px;  
+    transform: translateY(-100%);
+    padding:10px 0;
+}
+
+
+
+
+/* 喜欢 */
+.like-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 180px;
+}
+.like-left-image, .like-right-image {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    z-index: 1;
+}
+
+.like-left-image {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.like-right-image {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.side-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.like-dyy{
+    flex: 1;
+    min-width: 300px;
+    height: 200px;
+    background-color: #83cff8;
+    padding: 20px;
+    color: rgb(11, 15, 70);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    
+}
+.like-dyy.dyyy{
+    background-color: pink;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.like-dyy h3{
+    padding: 10px 0;
+    font-size: 23px;
+}
+
+.like-dyy p{
+    font-size: 17px;
+    padding: 10px 0;
+    color: rgb(247, 247, 249);
+    opacity: 0.1;
+}
+
+.like-dyy h3{
+    font-size: 20px;
+    padding: 10px 0;
+    color: rgb(247, 247, 249);
+    opacity: 0.1;
+}
+
+
+/* 联系 */
+#contact{
+    background-color: #f5f5f6;
+}
+
+
+.contact-info{
+    align-items: center;
+    padding: 20px 0;
+}
+
+/*底部*/
+.kk-container{
+    background-color: #15293d;
+    color: pink;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+
+#to-top{
+    position: fixed;
+    bottom: 100px;
+    right:20px;
+    background-color: #7da0f8;
+    
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    opacity: 0.8;
+    border: none;
+    z-index: 999;
+}
+
+#to-top:hover{
+    background-color: #83a5f3;
+    opacity: 0.5;
+    
+}
+
+/*响应式布局*/
+/* 平板设备 */
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .crooner-container, .like-container {
+        padding: 0 100px;
+    }
+    .crooner-czy, .crooner-whl, .crooner-zrt, .crooner-lky, .crooner-xyj, .crooner-lzl {
+        width: 48%;
+    }
+}
+
+/* 手机设备 */
+@media screen and (max-width: 768px) {
+    /* 全局样式调整 */
+    body {
+        font-size: 16px;
+    }
+
+    /* 导航栏适配 */
+    header h1 {
+        font-size: 28px;
+        margin: 10px auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    /* 区块通用样式调整 */
+    section h2 {
+        font-size: 22px;
+        padding: 40px 0 15px 0;
+    }
+
+    section p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    /* crooner-container 适配 */
+    .crooner-container{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .crooner-czy, .crooner-whl, .crooner-zrt, .crooner-lky, .crooner-xyj, .crooner-lzl{
+        width: 95%;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .crooner-container h3 {
+        font-size: 20px;
+    }
+
+    .crooner-container p {
+        font-size: 16px;
+    }
+
+    /* 隐藏侧边图片 */
+    .crooner-right, .crooner-left {
+        display: none;
+    }
+
+    /* like-container 适配 */
+    .like-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .like-left-image, .like-right-image {
+        display: none;
+    }
+
+    .like-dyy {
+        width: 95%;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .like-dyy h3 {
+        font-size: 18px;
+    }
+
+    .like-dyy p {
+        font-size: 15px;
+    }
+
+    /* 技能/爱好适配 */
+    .ability-frontend{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .progress-bar{
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .ability-frontend h3{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* 返回顶部按钮 */
+    #to-top{
+        bottom: 80px;
+        right: 10px;
+        width: 50px;
+        height: 30px;
+        font-size: 12px;
+        padding: 5px;
+    }
+}
